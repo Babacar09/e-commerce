@@ -1,0 +1,52 @@
+// import { notFound } from 'next/navigation';
+
+// // async function getProduct(id: string) {
+// //   const res = await fetch(`http://localhost:3000/api/v1/products/${id}`);
+// //    if (!res.ok)
+// //       return undefined;
+// //     console.log(res);
+    
+// //   return res.json();
+  
+  
+// // }
+
+// // type Props={
+// //     params:{
+// //         id:string
+// //     }
+// // }
+// export default async function ProductDetail({ params }:{params:{id:any}}) {
+//   //const product = await getProduct(params.id as string);
+//   //const awaitedParams = await Promise.resolve(params)
+//   //const product = await getProduct(awaitedParams.id)
+//   const productId = params.id
+//   const res = await fetch(`http://localhost:3000/api/v1/products/${productId}`)
+//   console.log("ID du produit dans la page de détails:", productId);
+
+//   if (!res) {
+//     notFound(); // Affiche la page 404
+//     return null
+//   }
+//   const product = await res.json()
+//   if(!product){
+//     notFound()
+//     return null
+
+//   }
+
+//   return (
+
+//     <div>
+//     {product.images && product.images.length > 0 ? (
+//       <img src={product.images[0]} alt={product.title} style={{ maxWidth: '300px' }} />
+//     ) : (
+//       <p>Pas d'image disponible</p>
+//     )}
+//     <h1>{product.title}</h1>
+//     <p>{product.description}</p>
+//     <p>{product.price} CFA</p>
+//   </div>
+  
+//   );
+// }
